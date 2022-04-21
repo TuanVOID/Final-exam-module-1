@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    let a = +prompt(" Kiem tra cap so than thiet - nhap vao 2 so, so thu nhat: ");
+    let b = +prompt("so thu 2: ");
+
+    function sumDivisor(x){
+        let sum = 0;
+        for (let i = 0; i < (x-1); i++) {
+            if ( x % i === 0) {
+                sum = sum + i;
+            }
+        } return sum;
+    }
+
+    if ( sumDivisor(a) === b && sumDivisor(b) === a) {
+        alert("True")
+    } else { alert( " false ")};
+
+</script>
+</body>
+</html>

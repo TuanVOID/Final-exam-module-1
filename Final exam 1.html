@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thi cuoi module 1</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let sum = 0;
+    let sumTemp = 0;
+    let temp = [];
+    let result = 0;
+    let n = prompt("nhap vao so luong phan tu can nhap vao ( <= 50 ) ")
+    if (n <= 50) {
+        for (let i = 0; i < n; i++) {
+            let num = +prompt("Nhap vao so ");
+            arr.push(num);
+        }
+    } else {
+        alert("So luong nhap qua 50")
+    }
+    alert("Mang da nhap la: [" + arr + "]")
+
+    for (let i = 0; i < arr.length; i = i +2) {
+        if (arr[i] % 2 !== 0) {
+            sum = sum + arr[i];
+            temp.push(arr[i]);
+        }
+    }
+    for (let i = 0; i < temp.length; i++) {
+        sumTemp = sumTemp + temp[i];
+    }
+    result = sumTemp / temp.length;
+
+    alert("Trung binh cac so le o vi tri chan la " + result);
+
+</script>
+</body>
+</html>
